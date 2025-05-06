@@ -24,7 +24,7 @@ function App() {
         <HeroSection />
         <div
           style={{
-            backgroundColor: "#3a1308",
+            backgroundColor: "rgb(50, 17, 7)",
             color: "white",
             padding: "60px 20px",
             textAlign: "center",

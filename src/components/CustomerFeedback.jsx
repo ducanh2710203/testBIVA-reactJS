@@ -27,15 +27,28 @@ const testimonialsData = [
 
 const CustomerFeedback = () => {
   return (
-    <div className="testimonials">
-      {testimonialsData.map((testimonial, index) => (
-        <div className="testimonial" key={index}>
-          <p>{testimonial.text}</p>
-          <img src={testimonial.img} alt={`Khách ${index + 1}`} />
-          <div className="testimonial-name">{testimonial.name}</div>
-        </div>
-      ))}
-    </div>
+    <>
+      <h2
+        style={{
+          marginTop: "60px",
+          fontWeight: "bold",
+          textAlign: "center",
+          textTransform: "uppercase",
+          textDecoration: "underline",
+        }}
+      >
+        Sản phẩm nổi bật
+      </h2>
+      <div className="testimonials">
+        {testimonialsData.map((testimonial, index) => (
+          <div className="testimonial" key={index}>
+            <p>{testimonial.text}</p>
+            <img src={testimonial.img} alt={`Khách ${index + 1}`} />
+            <div className="testimonial-name">{testimonial.name}</div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
