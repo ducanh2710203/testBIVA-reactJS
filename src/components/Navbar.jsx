@@ -29,7 +29,6 @@ const Navbar = () => (
     </div>
     <img
       src="https://bivaco.net/casacohibastore/_assets/media/d6d578497e2dac4892c8ecc7ffa024e8.png"
-      className="bg-img1"
       style={{ width: "80%", height: "100%", marginLeft: "10%" }}
       alt="Overlay"
     />
