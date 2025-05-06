@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import ProductShowcase from "./components/ProductShowcase";
+import FeaturedProducts from "./components/FeaturedProducts";
+import VideoTutorial from "./components/VideoTutorial";
+import CustomerFeedback from "./components/CustomerFeedback";
+import Footer from "./components/Footer";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Header />
+      <div
+        id="next-section"
+        style={{
+          height: "200%",
+          width: "100%",
+          backgroundColor: "rgb(50, 17, 7)",
+        }}
+      >
+        <HeroSection />
+        <div
+          style={{
+            backgroundColor: "#3a1308",
+            color: "white",
+            padding: "60px 20px",
+            textAlign: "center",
+            fontFamily: "'Segoe UI', sans-serif",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <ProductShowcase />
+        </div>
+        <FeaturedProducts />
+        <VideoTutorial />
+        <CustomerFeedback />
+        <Footer />
+      </div>
+    </>
   );
 }
 
