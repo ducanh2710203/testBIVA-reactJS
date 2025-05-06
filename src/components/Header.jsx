@@ -53,7 +53,6 @@ function Header() {
         <div className="hero-content text-center text-white">
           <p style={{ margin: "20px" }}>
             <span
-              className="OYPEnA"
               style={{
                 fontSize: "55px",
                 fontWeight: 400,
@@ -67,7 +66,6 @@ function Header() {
             </span>
             <br />
             <span
-              className="OYPEnA"
               style={{
                 fontSize: "55px",
                 fontWeight: 400,
@@ -81,7 +79,6 @@ function Header() {
             </span>
           </p>
           <span
-            className="OYPEnA"
             style={{
               fontSize: "55px",
               fontWeight: 700,
